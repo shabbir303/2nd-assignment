@@ -70,7 +70,7 @@ nav ul li button span {
     align-items: center;
     background-image: url(./images/Group\ 14.png);
     background-repeat: no-repeat;
-    width:100%;
+    width: 100%;
 }
 
 .play .play-description {
@@ -144,9 +144,9 @@ nav ul li button span {
     justify-content: space-between;
     align-items: center;
     padding: 56px 240px;
-    
-    
-    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%) ;
+
+
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
     /* width:100%; */
 }
 
@@ -167,8 +167,9 @@ nav ul li button span {
     text-align: right;
     padding-bottom: 24px;
 }
-.gamer .gamer-description{
-    text-align:right;
+
+.gamer .gamer-description {
+    text-align: right;
 }
 
 .gamer .gamer-description button {
@@ -176,19 +177,60 @@ nav ul li button span {
     padding: 21px 40px;
     /* margin-left: 400px; */
     border-radius: 30px;
-    border:none;
-    margin-bottom:20px;
+    border: none;
+    margin-bottom: 20px;
     background-color: #F948B2;
-    color:white;
-    font-size:15px;
-} 
-.gamer .gamer-description h3{
+    color: white;
+    font-size: 15px;
+}
+
+.gamer .gamer-description h3 {
     line-height: 30px;
 }
-.gamer .gamer-description h3>span{
-   font-weight: 400;
-   color:#534C64;
+
+.gamer .gamer-description h3>span {
+    font-weight: 400;
+    color: #534C64;
 }
+
+/* end gamer*/
+
+/* funny videos start */
+.funny-videos{
+    padding:120px 240px;
+}
+.funny-videos h1 {
+    font-size:35px;
+    padding-bottom:15px;
+}
+
+.funny-videos h1> span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.funny-videos p{
+    padding-bottom:35px;
+    font-size:small
+}
+.funny-videos{
+    text-align:center;
+}
+.funny-videos .video-section{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.funny-videos .video-section div{
+    display:block;
+    line-height: 30px;
+    width:300px;
+    height:360px;
+    color:#534C64;
+    
+}
+
 /* media query */
 @media screen and (max-width:576px) {
     nav {
