@@ -8,12 +8,12 @@ body {
 }
 
 nav {
-    width:100%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    background:white;
+
+    background: white;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
 
@@ -43,28 +43,108 @@ nav ul {
     align-items: center;
     margin: 30px 240px;
 }
+
 nav ul li button {
-    font-size:17px;
-    background-color:rgba(11, 2, 35, 0.10);
-    border:none;
-    width:200px;
-    height:40px;
+    font-size: 17px;
+    background-color: rgba(11, 2, 35, 0.10);
+    border: none;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+nav ul li button span {
+    color: red;
+}
+
+/* nav complete */
+
+/* play-description */
+.play {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(./images/Group\ 14.png);
+    background-repeat: no-repeat;
+}
+
+.play>.play-description {
+    margin-left: 240px;
+    padding: 130px 0;
+}
+
+.play .play-description h2 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.play .play-description h1 {
+    font-size: 80px;
+    font-weight: 900;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.play .play-description>ul{
+    padding-top:18px;
+    padding-bottom:30px;
+    list-style: none;
+    margin-left:-30px;
+}
+.play .play-description ul>li{
     display:flex;
     gap:10px;
-    align-items:center;
-    justify-content:center;
-    border-radius:10px;
+    padding-bottom:15px;
 }
-nav ul li button span{
-    color:red;
+.play .play-description ul li>i{
+    color:#F948B2;
 }
-/* nav complete */
+.play .play-description button{
+    height:50px;
+    width:120px;
+    color:white;
+    border-radius:30px;
+    border:none;
+    margin-right: 20px;
+    font-weight: 500;
+    font-size:14px;
+    /* display:flex;
+    gap:20px;
+    justify-content: center;
+    align-items: center; */
+}
+.play .play-description .sign{
+   background-color:#F948B2;
+}
+.play .play-description .go{
+    background-color: #4EC5F7;
+}
+
+.play img{
+    margin-right:240px;
+}
+/* complete header */
+
+/* media query */
 @media screen and (max-width:576px) {
-    nav{
+    nav  {
         flex-direction: column;
     }
-    nav ul{
+
+    nav ul {
         flex-direction: column;
-        row-gap:30px;
+        row-gap: 30px;
+        align-items: center;
+    }
+    .play {
+        flex-direction: column-reverse;
+    }
+    .play img{
+        width:400px;
     }
 }
