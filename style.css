@@ -306,9 +306,56 @@ nav ul li button span {
 footer{
     color:white;
     background-color: #0B0223;
-    height:600px;
+    height:400px;
     width:100%;
+    text-align:center;
+    padding:120px 0;
 }
+footer .head{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+}
+.head h1{
+    font-size:45px;
+}
+.head h1>span{
+    color:#F948B2
+}
+footer >.services{
+    display:flex;
+    list-style:none;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    font-size:15px;
+    padding:40px 0px;
+}
+footer> .foot-icon{
+    gap:40px;
+    display:flex;
+    justify-content:center;
+    padding-bottom:40px;
+}
+footer .foot-icon i{
+    font-size:40px;
+    
+}
+footer> .condition{
+    display:flex;
+    list-style: none;
+    justify-content:center;
+    gap:40px;
+    font-size:13px;
+    color: rgba(255, 255, 255, 0.60);
+    padding-bottom:30px;
+}
+footer p{
+    font-size:13px;
+    color: rgba(255, 255, 255, 0.60);
+}
+
 /* media query */
 @media screen and (max-width:576px) {
     nav {
