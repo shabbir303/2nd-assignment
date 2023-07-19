@@ -278,7 +278,7 @@ nav ul li button span {
     justify-content: space-around;
     align-items: center;
     height:800px;
-    display:none;
+    /* display:none; */
 }
 
 .downloads .downloads-description {
@@ -326,7 +326,7 @@ nav ul li button span {
     gap:20px;
     margin:120px 240px;
     justify-content:center;
-    display:none;
+    /* display:none; */
   }
   .icon button{
     width:250px;
@@ -405,58 +405,181 @@ footer p{
 @media screen and (max-width:576px) {
     nav {
         flex-direction: column;
-        width:400px;
+        padding-bottom:20px;
     }
 
     nav ul {
         flex-direction: column;
         row-gap: 30px;
         align-items: center;
-        width:400px;
+        margin: 0;
     }
-    .play{
+
+    nav .nav-icon {
+        margin: 0;
+    }
+
+    .play {
         flex-direction: column-reverse;
-        padding:0 20px; */
-         margin:0px;
-        align-items:center;
-        width:400px;
-        
+        /* padding: 0 20px; */
+        margin: 0px;
+        align-items: center;
+        width: 100%;
+        padding-bottom:20px;
     }
+
     .play .play-description {
-       
-       width:400px;
-       background-image: bottom;
+        margin-left: 0;
+        background-image: bottom;
+        padding: 0;
+        margin-top: 75px;
+        text-align: center;
     }
+
     .play img {
-        padding:50px;
-        width:400px;
-        text-align:center;
-         padding-left:50px;
+        /* padding: 50px; */
+        /* width: 400px; */
+        object-fit: cover;
+        text-align: center;
+        padding-right: 0;
+        width: 100%;
+        /* padding-left: 50px; */
+
+    }
+
+    .gamer {
+        flex-direction: column;
+        /* margin-right:80px; */
+        width: 100%;
+        padding: 0;
+    }
+
+    .gamer h1 {
+        text-align: center;
+    }
+
+    .gamer p {
+        text-align: center;
+    }
+
+    .gamer img {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .gamer .gamer-description {
+        text-align: center;
+        width: 100%;
+    }
+
+    .funny-videos .video-section {
+        flex-direction: column;
+        row-gap: 50px;
         
     }
 
-    .gamer{
-        flex-direction:column;
-        /* margin-right:80px; */
-       
+    /* .gamer .gamer-description p {} */
+
+    .funny-videos {
+        padding: 0;
+        margin-top: 50px;
+    }
+
+    .video-section img {
+        width: 100%;
+    }
+
+    .funny-videos .video-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .icon{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding:0px;
+        width:100%;
+        margin:0px;
+        padding-top:100px;
+        /* font-size:20px; */
+        padding-bottom:100px;
+    }
+    .icon button{
+        width:100%;
+        /* height:auto; */
+        /* display:flex; */
+        justify-content:space-between;
+        align-items:center;
+        border-radius:40px;
+        border:none;
+        background: white;
+        box-shadow:0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+        font-size:13px;
         
-    }
-    .gamer img{
-        width:400px;
-        padding:20px;
-        
-    }
-    .gamer .gamer-description {
-        text-align: center;
-       
-        
-    }
-    .funny-videos .video-section{
-        flex-direction:column;
-        row-gap:100px;
-    }
-    .gamer .gamer-description p{
+      }
+      .icon> button{
+        width:150px;
+        height:80px;
+      }
+      footer{
+        padding:0;
+        width:100%;
+        height:100%;
+      }
+      footer .head{
+        width:100%;
+        padding-top:20px;
+      }
+      footer >.services{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        width:100%;
        
     } 
-    
+    footer> .foot-icon{
+        gap:40px;
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    footer .foot-icon i{
+        font-size:20px;
+        
+    }
+    footer> .condition{
+       display:grid;
+       grid-template-columns: repeat(2, 1fr);
+       gap:20px;
+       
+    }
+    footer p{
+        font-size:13px;
+        color: rgba(255, 255, 255, 0.60);
+        padding-bottom:20px;
+    }  
+    .downloads {
+        flex-direction: column;
+        /* display:none; */
+        width:100%;
+        height:100%;
+        margin-top: 150px;
+    }
+    .downloads .downloads-description {
+        text-align: center;
+        padding:0;
+    }
+    .downloads .downloads-description h1 {
+        line-height: 20px;
+        font-size:20px;
+    }
+    .downloads .downloads-description p{
+        width:100%;
+        text-align:center;
+        padding-top:20px;
+        line-height:20px;
+        font-size:12px;
+    }
+    .downloads .horse{
+        margin-top:30px;
+        max-width:100%;
+        height:auto;
+    }
+        
 }
