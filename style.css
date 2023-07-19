@@ -577,9 +577,17 @@ footer p{
         font-size:12px;
     }
     .downloads .horse{
-        margin-top:30px;
-        max-width:100%;
+        margin-top:50px;
+        width:100%;
         height:auto;
+    }
+    .downloads .girl{
+        position:relative;
+        width:100%;
+        height:40px;
+        bottom:-30px;
+        margin-top:50px;
+        display:block;
     }
         
 }
