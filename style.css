@@ -102,7 +102,7 @@ nav ul li button span {
     padding-top: 18px;
     padding-bottom: 30px;
     list-style: none;
-    margin-left: -30px;
+    
 }
 
 .play .play-description ul>li {
@@ -311,8 +311,8 @@ nav ul li button span {
 }
 
 
-.downloads .horse{
-    width:400px;
+.downloads .download-image>.horse{
+    width:200px;
     height:500;
 }
 .downloads .girl{
@@ -439,6 +439,8 @@ footer p{
         padding: 0;
         margin-top: 75px;
         text-align: center;
+        background-image: none;
+        width:70%;
     }
 
     .play img {
@@ -569,6 +571,7 @@ footer p{
     .downloads .downloads-description {
         text-align: center;
         padding:0;
+        width:80%;
     }
     .downloads .downloads-description h1 {
         line-height: 20px;
@@ -583,7 +586,7 @@ footer p{
     }
     .downloads .horse{
         margin-top:50px;
-        width:80%;
+        width:50%;
         height:auto;
     }
     .downloads .girl{
@@ -642,10 +645,10 @@ footer p{
     .play img {
         /* padding: 50px; */
         /* width: 400px; */
-        object-fit: cover;
+        /* object-fit: cover; */
         text-align: center;
         padding-right: 0;
-        width: 100%;
+        width: 70%;
         /* padding-left: 50px; */
 
     }
@@ -706,7 +709,7 @@ footer p{
         padding-bottom:100px;
     }
     .icon button{
-        width:100%;
+        width:70%;
         /* height:auto; */
         /* display:flex; */
         justify-content:space-between;
@@ -718,10 +721,10 @@ footer p{
         font-size:13px;
         
       }
-      .icon> button{
+      /* .icon> button{
         width:150px;
         height:80px;
-      }
+      } */
       footer{
         padding:0;
         width:100%;
