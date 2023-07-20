@@ -309,10 +309,12 @@ nav ul li button span {
     line-height:30px;
     font-size:15px;
 }
-.downloads .download-image{
+/* .downloads .download-image{
     /* width:-100px; */
+/* } */ 
+.download-image-responsive{
+    display:none;
 }
-
 .downloads .download-image .horse{
     width:600px;
     height:500;
@@ -408,9 +410,14 @@ footer p{
     font-size:13px;
     color: rgba(255, 255, 255, 0.60);
 }
+
 /* footer end */
 /* media query */
 @media screen and (max-width:576px) {
+     *{
+        margin:0;
+        padding:0;
+     }
     nav {
         flex-direction: column;
         padding-bottom:20px;
@@ -575,7 +582,8 @@ footer p{
         /* display:none; */
         width:100%;
         /* height:100%; */
-        margin-top: 150px;
+        margin-top: 250px;
+        height:auto;
     }
     .downloads .downloads-description {
         text-align: center;
@@ -594,18 +602,23 @@ footer p{
         font-size:12px;
     }
     .downloads .download-image{
-        display:flex;
-        flex-direction: column;
+        /* position:relative; */
+        /* flex-direction: column; */
+        display:none;
+    }
+    .downloads .download-image-responsive{
+        display:block;
+
     }
     .downloads .download-image .horse{
         margin-top:50px;
-        width:90%;
-        padding:0px;
+        width:50%;
+        /* padding: 0 30px; */
         margin:0px;
     }
     .downloads .girl{
-        position:relative;
-        width:50%;
+        /* position:absolute;
+        width:50%; */
         
     }
         
