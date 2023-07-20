@@ -309,17 +309,20 @@ nav ul li button span {
     line-height:30px;
     font-size:15px;
 }
+.downloads .download-image{
+    /* width:-100px; */
+}
 
-
-.downloads .download-image>.horse{
-    width:200px;
+.downloads .download-image .horse{
+    width:600px;
     height:500;
 }
 .downloads .girl{
     position:relative;
-    width:250px;
-    height:300px;
-    bottom:-50px;
+    width:270px;
+    height:350px;
+    /* bottom:-50px; */
+    top:50px;
     right:700px;
 }
 /* end download section */
@@ -508,23 +511,29 @@ footer p{
         padding-top:100px;
         /* font-size:20px; */
         padding-bottom:100px;
+        /* gap:10px; */
+        column-gap: 5px;
     }
     .icon button{
-        width:100%;
+        /* width:100%; */
         /* height:auto; */
         /* display:flex; */
-        justify-content:space-between;
-        align-items:center;
+        /* justify-content:space-between; */
+        /* align-items:center; */
         border-radius:40px;
         border:none;
         background: white;
         box-shadow:0px 4px 30px 0px rgba(0, 0, 0, 0.05);
         font-size:13px;
-        
+        width:150px;
+        height:50px;
       }
-      .icon> button{
+      /* .icon> button{
         width:150px;
         height:80px;
+      } */
+      .icon img{
+        width:40px;
       }
       footer{
         padding:0;
@@ -584,18 +593,20 @@ footer p{
         line-height:20px;
         font-size:12px;
     }
-    .downloads .horse{
+    .downloads .download-image{
+        display:flex;
+        flex-direction: column;
+    }
+    .downloads .download-image .horse{
         margin-top:50px;
-        width:50%;
-        height:auto;
+        width:90%;
+        padding:0px;
+        margin:0px;
     }
     .downloads .girl{
         position:relative;
-        width:100%;
-        height:40px;
-        bottom:-30px;
-        margin-top:50px;
-        display:block;
+        width:50%;
+        
     }
         
 }
